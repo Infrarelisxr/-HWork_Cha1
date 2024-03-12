@@ -6,9 +6,7 @@
 #include<chrono>
 #include <fstream> 
 using namespace std;
-using std::cout;
-using std::endl;
-using namespace std::chrono;
+using namespace chrono;
 void complex()
 {
     volatile size_t i = 0; // 要求编译器每次都直接读取原始内存地址，防止编译器对循环做优化
