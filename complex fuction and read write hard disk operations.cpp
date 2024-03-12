@@ -5,14 +5,13 @@
 #include <time.h>
 #include<chrono>
 #include <fstream> 
-#include<chrono>
 using namespace std;
 using std::cout;
 using std::endl;
 using namespace std::chrono;
 void complex()
 {
-    volatile size_t i = 0; // 要求编译器每次都直接读取原始内存地址，防止编译器对循环做优化
+    volatile size_t i = 0; // 瑕佹眰缂栬瘧鍣ㄦ瘡娆￠兘鐩存帴璇诲彇鍘熷鍐呭瓨鍦板潃锛岄槻姝㈢紪璇戝櫒瀵瑰惊鐜仛浼樺寲
     int sizt_t = 100000000;
     vector<double> vdouble(sizt_t, 0.0);
     vector<int> vint(sizt_t, 0);
